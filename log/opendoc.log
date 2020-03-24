@@ -1,0 +1,17 @@
+2020-03-11 03:53:54.939 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2020-03-11 03:53:55.862 - WARN  [           main] o.s.b.a.e.EndpointId           : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-03-11 03:53:56.091 - INFO  [           main] o.s.c.c.s.GenericScope         : BeanFactory id=15a81c15-1c40-35be-801c-0b2f894bff0d
+2020-03-11 03:53:56.738 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8762 (http)
+2020-03-11 03:53:56.749 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8762"]
+2020-03-11 03:53:56.750 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2020-03-11 03:53:56.751 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-03-11 03:53:56.875 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2020-03-11 03:53:56.875 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1913 ms
+2020-03-11 03:53:57.019 - WARN  [           main] c.n.c.s.URLConfigurationSource : No URLs will be polled as dynamic configuration sources.
+2020-03-11 03:53:57.019 - INFO  [           main] c.n.c.s.URLConfigurationSource : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-03-11 03:53:57.030 - INFO  [           main] c.n.c.DynamicPropertyFactory   : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@204abeff
+2020-03-11 03:53:57.307 - INFO  [           main] o.a.j.l.DirectJDKLog           : Stopping service [Tomcat]
+2020-03-11 03:53:57.332 - WARN  [           main] c.s.AbstractApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2020-03-11 03:53:57.348 - INFO  [           main] valuationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

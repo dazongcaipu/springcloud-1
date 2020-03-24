@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service-user" />
+        <module name="eureka-server" />
+        <module name="service-menu" />
+        <module name="service-role" />
+        <module name="springcloud" />
+        <module name="service-ribbon" />
+        <module name="service-media" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-login" target="1.8" />
+      <module name="service-test" target="1.8" />
+      <module name="service-usr" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-login" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="service-media" options="-parameters" />
+      <module name="service-menu" options="-parameters" />
+      <module name="service-ribbon" options="-parameters" />
+      <module name="service-role" options="-parameters" />
+      <module name="service-test" options="-parameters" />
+      <module name="service-user" options="-parameters" />
+      <module name="service-usr" options="-parameters" />
+      <module name="springcloud" options="-parameters" />
+    </option>
+  </component>
+</project>
