@@ -2,9 +2,8 @@ package com.example.serviceuser.service;
 
 import com.example.serviceuser.entity.Media;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -12,15 +11,15 @@ import java.util.List;
 @RequestMapping("/media")
 public interface MediaProvider {
 
-    @RequestMapping(value = "/media",method = RequestMethod.POST)
-    List<Media> add(@PathVariable("media") Media media);
+    @RequestMapping(value = "/add")
+    List<Media> add(@RequestParam("media") Media media);
 
-    @RequestMapping(value = "/media",method = RequestMethod.PUT)
-    List<Media> update(@PathVariable("media") Media media);
+    @RequestMapping(value = "/update")
+    List<Media> update(@RequestParam("media") Media media);
 
-    @RequestMapping(value = "/media",method = RequestMethod.GET)
-    List<Media> get(@PathVariable("media") Media media);
+    @RequestMapping(value = "/get")
+    List<Media> get(@RequestParam(value = "mediaId", required = false) Integer mediaId);
 
-    @RequestMapping(value = "/media",method = RequestMethod.DELETE)
-    List<Media> delete(@PathVariable("mediaId") String mediaId);
+    @RequestMapping(value = "/delete")
+    List<Media> delete(@RequestParam(value = "mediaId", required = false) Integer mediaId, @RequestParam(value = "mediaIdList", required = false) List<Integer> mediaIdList);
 }

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: Administrator
+Build-Jdk: 1.8.0_162
+Implementation-Title: springcloud Maven Webapp
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.springcloud
+Main-Class: ${start-class}
+

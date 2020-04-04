@@ -15,19 +15,19 @@ public class UserController {
     @Autowired
     private UsrMapper userMapper;
 
-    @RequestMapping(value = "/user",method = RequestMethod.POST)
+    @RequestMapping(value = "/add")
     public boolean add(@RequestBody Usr user){
         return userMapper.insert(user) > 0;
     }
 
-    @RequestMapping(value = "/user",method = RequestMethod.PUT)
+    @RequestMapping(value = "/update")
     public boolean update(@RequestBody Usr user){
         UsrExample me = new UsrExample();
         me.createCriteria().andIdEqualTo(user.getId());
         return userMapper.updateByExample(user,me) > 0;
     }
 
-    @RequestMapping(value = "/user",method = RequestMethod.GET)
+    @RequestMapping(value = "/get")
     public List<Usr> get(@RequestParam(value = "userId",required = false)Integer userId){
         UsrExample me = new UsrExample();
         if(Objects.nonNull(userId))
@@ -35,7 +35,7 @@ public class UserController {
         return userMapper.selectByExample(me);
     }
 
-    @RequestMapping(value = "/user",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete")
     public boolean delete(@RequestParam(value = "userId", required = false)Integer userId, @RequestParam(value = "userIdList", required = false)List<Integer> userIdList){
         UsrExample me = new UsrExample();
         if(Objects.nonNull(userId)){

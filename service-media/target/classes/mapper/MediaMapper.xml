@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.servicemedia.mapper.MediaMapper">
+  <resultMap id="BaseResultMap" type="com.example.servicemedia.entity.Media">
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="media_name" jdbcType="VARCHAR" property="mediaName" />
+    <result column="media_path" jdbcType="VARCHAR" property="mediaPath" />
+    <result column="media_end_name" jdbcType="VARCHAR" property="mediaEndName" />
+    <result column="media_time" jdbcType="VARCHAR" property="mediaTime" />
+    <result column="media_size" jdbcType="VARCHAR" property="mediaSize" />
+    <result column="media_type" jdbcType="VARCHAR" property="mediaType" />
+    <result column="relation_id" jdbcType="INTEGER" property="relationId" />
+    <result column="relation_table" jdbcType="VARCHAR" property="relationTable" />
+    <result column="media_urlpath" jdbcType="VARCHAR" property="mediaUrlpath" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.example.servicemedia.entity.Media">
+    <result column="media_data" jdbcType="LONGVARBINARY" property="mediaData" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, media_name, media_path, media_end_name, media_time, media_size, media_type, relation_id, 
+    relation_table, media_urlpath
+  </sql>
+  <sql id="Blob_Column_List">
+    media_data
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.example.servicemedia.entity.MediaExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from media
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.example.servicemedia.entity.MediaExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from media
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.example.servicemedia.entity.MediaExample">
+    delete from media
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.example.servicemedia.entity.Media">
+    insert into media (id, media_name, media_path, 
+      media_end_name, media_time, media_size, 
+      media_type, relation_id, relation_table, 
+      media_urlpath, media_data)
+    values (#{id,jdbcType=INTEGER}, #{mediaName,jdbcType=VARCHAR}, #{mediaPath,jdbcType=VARCHAR}, 
+      #{mediaEndName,jdbcType=VARCHAR}, #{mediaTime,jdbcType=VARCHAR}, #{mediaSize,jdbcType=VARCHAR}, 
+      #{mediaType,jdbcType=VARCHAR}, #{relationId,jdbcType=INTEGER}, #{relationTable,jdbcType=VARCHAR}, 
+      #{mediaUrlpath,jdbcType=VARCHAR}, #{mediaData,jdbcType=LONGVARBINARY})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.servicemedia.entity.Media">
+    insert into media
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="mediaName != null">
+        media_name,
+      </if>
+      <if test="mediaPath != null">
+        media_path,
+      </if>
+      <if test="mediaEndName != null">
+        media_end_name,
+      </if>
+      <if test="mediaTime != null">
+        media_time,
+      </if>
+      <if test="mediaSize != null">
+        media_size,
+      </if>
+      <if test="mediaType != null">
+        media_type,
+      </if>
+      <if test="relationId != null">
+        relation_id,
+      </if>
+      <if test="relationTable != null">
+        relation_table,
+      </if>
+      <if test="mediaUrlpath != null">
+        media_urlpath,
+      </if>
+      <if test="mediaData != null">
+        media_data,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="mediaName != null">
+        #{mediaName,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaPath != null">
+        #{mediaPath,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaEndName != null">
+        #{mediaEndName,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaTime != null">
+        #{mediaTime,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaSize != null">
+        #{mediaSize,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaType != null">
+        #{mediaType,jdbcType=VARCHAR},
+      </if>
+      <if test="relationId != null">
+        #{relationId,jdbcType=INTEGER},
+      </if>
+      <if test="relationTable != null">
+        #{relationTable,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaUrlpath != null">
+        #{mediaUrlpath,jdbcType=VARCHAR},
+      </if>
+      <if test="mediaData != null">
+        #{mediaData,jdbcType=LONGVARBINARY},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.example.servicemedia.entity.MediaExample" resultType="java.lang.Long">
+    select count(*) from media
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update media
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.mediaName != null">
+        media_name = #{record.mediaName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaPath != null">
+        media_path = #{record.mediaPath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaEndName != null">
+        media_end_name = #{record.mediaEndName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaTime != null">
+        media_time = #{record.mediaTime,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaSize != null">
+        media_size = #{record.mediaSize,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaType != null">
+        media_type = #{record.mediaType,jdbcType=VARCHAR},
+      </if>
+      <if test="record.relationId != null">
+        relation_id = #{record.relationId,jdbcType=INTEGER},
+      </if>
+      <if test="record.relationTable != null">
+        relation_table = #{record.relationTable,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaUrlpath != null">
+        media_urlpath = #{record.mediaUrlpath,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mediaData != null">
+        media_data = #{record.mediaData,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update media
+    set id = #{record.id,jdbcType=INTEGER},
+      media_name = #{record.mediaName,jdbcType=VARCHAR},
+      media_path = #{record.mediaPath,jdbcType=VARCHAR},
+      media_end_name = #{record.mediaEndName,jdbcType=VARCHAR},
+      media_time = #{record.mediaTime,jdbcType=VARCHAR},
+      media_size = #{record.mediaSize,jdbcType=VARCHAR},
+      media_type = #{record.mediaType,jdbcType=VARCHAR},
+      relation_id = #{record.relationId,jdbcType=INTEGER},
+      relation_table = #{record.relationTable,jdbcType=VARCHAR},
+      media_urlpath = #{record.mediaUrlpath,jdbcType=VARCHAR},
+      media_data = #{record.mediaData,jdbcType=LONGVARBINARY}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update media
+    set id = #{record.id,jdbcType=INTEGER},
+      media_name = #{record.mediaName,jdbcType=VARCHAR},
+      media_path = #{record.mediaPath,jdbcType=VARCHAR},
+      media_end_name = #{record.mediaEndName,jdbcType=VARCHAR},
+      media_time = #{record.mediaTime,jdbcType=VARCHAR},
+      media_size = #{record.mediaSize,jdbcType=VARCHAR},
+      media_type = #{record.mediaType,jdbcType=VARCHAR},
+      relation_id = #{record.relationId,jdbcType=INTEGER},
+      relation_table = #{record.relationTable,jdbcType=VARCHAR},
+      media_urlpath = #{record.mediaUrlpath,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>

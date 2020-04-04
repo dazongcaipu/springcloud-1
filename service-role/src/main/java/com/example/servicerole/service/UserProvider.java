@@ -2,9 +2,8 @@ package com.example.servicerole.service;
 
 import com.example.servicerole.entity.Usr;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -12,15 +11,15 @@ import java.util.List;
 @RequestMapping("/user")
 public interface UserProvider {
 
-    @RequestMapping(value = "/user",method = RequestMethod.POST)
-    List<Usr> add(@PathVariable("user") Usr user);
+    @RequestMapping(value = "/add")
+    List<Usr> add(@RequestParam("user") Usr user);
 
-    @RequestMapping(value = "/user",method = RequestMethod.PUT)
-    List<Usr> update(@PathVariable("user") Usr user);
+    @RequestMapping(value = "/update")
+    List<Usr> update(@RequestParam("user") Usr user);
 
-    @RequestMapping(value = "/user",method = RequestMethod.GET)
-    List<Usr> get(@PathVariable("user") Usr user);
+    @RequestMapping(value = "/get")
+    List<Usr> get(@RequestParam(value = "userId", required = false) Integer userId);
 
-    @RequestMapping(value = "/user",method = RequestMethod.DELETE)
-    List<Usr> delete(@PathVariable("userId") String userId);
+    @RequestMapping(value = "/delete")
+    List<Usr> delete(@RequestParam(value = "userId", required = false) String userId, @RequestParam(value = "userIdList", required = false) List<String> userIdList);
 }

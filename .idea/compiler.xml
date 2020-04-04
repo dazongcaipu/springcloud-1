@@ -13,6 +13,7 @@
         <module name="springcloud" />
         <module name="service-ribbon" />
         <module name="service-media" />
+        <module name="springcloud-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +34,7 @@
       <module name="service-user" options="-parameters" />
       <module name="service-usr" options="-parameters" />
       <module name="springcloud" options="-parameters" />
+      <module name="springcloud-1" options="-parameters" />
     </option>
   </component>
 </project>

@@ -23,29 +23,19 @@ public class MenuController {
     @Autowired
     IMenuService service;
 
-    @RequestMapping("/test")
-    public List<Menu> get(){
-        return service.get();
-    }
-
-    @RequestMapping("/test1")
-    public String get1(){
-        return "123321";
-    }
-
-    @RequestMapping(value = "/menu",method = RequestMethod.POST)
+    @RequestMapping(value = "/add")
     public boolean add(@RequestBody Menu menu){
         return menuMapper.insert(menu) > 0;
     }
 
-    @RequestMapping(value = "/menu",method = RequestMethod.PUT)
+    @RequestMapping(value = "/update")
     public boolean update(@RequestBody Menu menu){
         MenuExample me = new MenuExample();
         me.createCriteria().andIdEqualTo(menu.getId());
         return menuMapper.updateByExample(menu,me) > 0;
     }
 
-    @RequestMapping(value = "/menu",method = RequestMethod.GET)
+    @RequestMapping(value = "/get")
     public List<Menu> get(@RequestParam(value = "menuId",required = false)Integer menuId){
         MenuExample me = new MenuExample();
         if(Objects.nonNull(menuId))
@@ -53,7 +43,7 @@ public class MenuController {
         return menuMapper.selectByExample(me);
     }
 
-    @RequestMapping(value = "/menu",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/delete")
     public boolean delete(@RequestParam(value = "menuId", required = false)Integer menuId, @RequestParam(value = "menuIdList", required = false)List<Integer> menuIdList){
         MenuExample me = new MenuExample();
         if(Objects.nonNull(menuId)){

@@ -1,10 +1,8 @@
 package com.example.main.service;
 
-import com.example.main.entity.Role;
+import com.example.main.entity.Roles;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
@@ -13,15 +11,15 @@ import java.util.List;
 @RequestMapping("/role")
 public interface RoleProvider {
 
-    @RequestMapping(value = "/role",method = RequestMethod.POST)
-    List<Role> add(@PathVariable("role") Role role);
+    @RequestMapping(value = "/add")
+    List<Roles> add(@RequestParam("role") Roles role);
 
-    @RequestMapping(value = "/role",method = RequestMethod.PUT)
-    List<Role> update(@PathVariable("role") Role role);
+    @RequestMapping(value = "/update")
+    List<Roles> update(@RequestParam("role") Roles role);
 
-    @RequestMapping(value = "/role",method = RequestMethod.GET)
-    List<Role> get(@RequestParam(value = "role", required = false) Role role);
+    @RequestMapping(value = "/get")
+    List<Roles> get(@RequestParam(value = "roleId", required = false) Integer roleId);
 
-    @RequestMapping(value = "/role",method = RequestMethod.DELETE)
-    List<Role> delete(@PathVariable("roleId") String roleId);
+    @RequestMapping(value = "/delete")
+    List<Roles> delete(@RequestParam(value = "roleId", required = false) Integer roleId, @RequestParam(value = "roleIdList", required = false) List<Integer> roleIdList);
 }

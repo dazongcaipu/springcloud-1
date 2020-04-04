@@ -1,9 +1,9 @@
 package com.example.servicerole.service;
 
-import com.example.servicerole.entity.Role;
+import com.example.servicerole.entity.Roles;
 
 import java.util.List;
 
 public interface IRoleService {
-    List<Role> get();
+    List<Roles> get();
 }

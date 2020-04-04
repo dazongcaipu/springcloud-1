@@ -34,7 +34,7 @@ class ServiceUserApplicationTests {
     public void testCommandUtil() {
 //        CommandUtil.Method<MenuFeignClient> method = (e) -> e.test();
 //        Object r = new CommandUtil<MenuFeignClient>(menuFeignClient,method,"menuService","test1").execute();
-        List test = menuProvider.test();
+        List test = menuProvider.get(1);
         logger.info("result:{}====", test);
     }
 }

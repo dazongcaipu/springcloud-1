@@ -35,8 +35,4 @@ public class TestController {
         return restTemplate.getForObject(SERVICE_MENU+"test1",String.class, (Object) null);
     }
 
-    @RequestMapping("/test2")
-    public String test2(){
-        return menuProvider.test1();
-    }
 }

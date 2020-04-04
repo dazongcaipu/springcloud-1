@@ -1,0 +1,81 @@
+server:
+  port: 8765
+  servlet:
+    context-path: /menu
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://server2:8777/eureka/,http://server1:8761/eureka/
+#  instance:
+#    hostname: 127.0.0.1
+#    lease-renewal-interval-in-seconds: 30 # 设置心跳的时间间隔（默认是30秒）
+#    lease-expiration-duration-in-seconds: 90 # 如果现在超过了5秒的间隔（默认是90秒）
+#    instance-id: service-menu  # 在信息列表时显示主机名称
+#    prefer-ip-address: true  # 访问的路径变为IP地址
+#  info:
+#    app.name: spricloud-test
+#    company.name: www.example.cn
+#    build.artifactId: $project.artifactId$
+#    build.version: $project.verson$
+
+spring:
+  application:
+    name: service-menu
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/dzcp?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  cloud:
+    loadbalancer:
+      eureka:
+        approximate-zone-from-hostname: true
+
+mybatis-plus:
+  type-aliases-package: com.example.servicemenu.entity
+  mapper-locations: classpath:mapper/*.xml
+
+#  redis:
+#    database: 16
+#    timeout: 0
+#    # Redis服务器地址
+#    host: 127.0.0.1
+#    # Redis服务器连接端口
+#    port: 6379
+#    # Redis服务器连接密码（默认为空）
+#    password:
+#    # 连接池最大连接数（使用负值表示没有限制）
+#    pool:
+#    max-active: 8
+#    # 连接池最大阻塞等待时间（使用负值表示没有限制）
+#    max-wait: -1
+#    # 连接池中的最大空闲连接
+#    max-idle: 8
+#    # 连接池中的最小空闲连接
+hystrix:
+  metrics:
+    enabled: true
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 500
+
+#zuul:
+#  prefix: /zuul
+#  ignored-services: "*"
+#  routes:
+#    service-menu: /menu/**
+#    route-name: #路由别名，无其他意义，与例1效果一致
+#      service-id: service-menu
+#      path: /menu/**
+#  ignored-patterns: \**/service-menu/**
+
+ribbon:
+  eureka:
+    enabled: true
+
+feign:
+  hystrix:
+    enabled: true
