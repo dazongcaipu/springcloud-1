@@ -8,55 +8,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68ad9c79-1607-4965-9751-98189dc972b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/springcloud-1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/mapper/RolesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/MenuProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/controller/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/controller/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/RoleExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/RoleProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/UserProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/menuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/menuProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/MediaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/RoleProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/UserProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/RoleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/RolesExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/mapper/RoleMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/IRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/MediaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/UserProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/menuProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/resources/mapper/RolesMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/MediaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/MenuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/MenuProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/RoleProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/test/java/com/example/serviceuser/ServiceUserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/test/java/com/example/serviceuser/ServiceUserApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/MediaProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/MenuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/MenuProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/RoleProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/UserProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/RoleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/RoleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/RoleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/RoleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/RoleProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/RoleProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/RoleProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/RoleProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/RoleExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/RoleExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/RoleExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/RoleExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/mapper/RoleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/IRoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/IRoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/mapper/RoleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/RoleProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/RoleProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/service/RoleProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/service/RoleProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/service/RoleProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/service/RoleProvider.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +70,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -270,6 +256,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
+          <option name="contentProportion" value="0.334428" />
           <treeState>
             <expand>
               <path>
@@ -307,14 +294,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585984143655</updated>
-      <workItem from="1585984147951" duration="3059000" />
+      <workItem from="1585984147951" duration="3938000" />
     </task>
+    <task id="LOCAL-00001" summary="项目结构变更">
+      <created>1585987466217</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585987466217</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目结构变更" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目结构变更" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="451" y="89" key="#Notifications" timestamp="1585987603552">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="451" y="89" key="#Notifications/0.0.1920.1032@0.0.1920.1032" timestamp="1585987603552" />
     <state x="409" y="159" width="1174" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585985569003">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -323,45 +326,85 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="623" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1585986884321" />
+    <state x="395" y="34" key="CommitChangelistDialog2" timestamp="1585987460244">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="395" y="34" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1585987460244" />
     <state x="685" y="209" key="FileChooserDialogImpl" timestamp="1585984260637">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="685" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1585984260637" />
-    <state width="1278" height="363" key="GridCell.Tab.0.bottom" timestamp="1585985664556">
+    <state width="1242" height="421" key="GridCell.Tab.0.bottom" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585985664556" />
-    <state width="1278" height="363" key="GridCell.Tab.0.center" timestamp="1585985664556">
+    <state width="1242" height="421" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.0.center" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585985664556" />
-    <state width="1278" height="363" key="GridCell.Tab.0.left" timestamp="1585985664556">
+    <state width="1242" height="421" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.0.left" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585985664556" />
-    <state width="1278" height="363" key="GridCell.Tab.0.right" timestamp="1585985664556">
+    <state width="1242" height="421" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.0.right" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585985664556" />
-    <state width="1278" height="363" key="GridCell.Tab.1.bottom" timestamp="1585985649655">
+    <state width="1242" height="421" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.1.bottom" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585985649655" />
-    <state width="1278" height="363" key="GridCell.Tab.1.center" timestamp="1585985649655">
+    <state width="1242" height="421" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.1.center" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585985649655" />
-    <state width="1278" height="363" key="GridCell.Tab.1.left" timestamp="1585985649655">
+    <state width="1242" height="421" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.1.left" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585985649655" />
-    <state width="1278" height="363" key="GridCell.Tab.1.right" timestamp="1585985649655">
+    <state width="1242" height="421" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.1.right" timestamp="1585988378605">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1278" height="363" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585985649655" />
+    <state width="1242" height="421" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585988378605" />
+    <state width="1242" height="421" key="GridCell.Tab.2.bottom" timestamp="1585988373534">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1242" height="421" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585988373534" />
+    <state width="1242" height="421" key="GridCell.Tab.2.center" timestamp="1585988373534">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1242" height="421" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585988373534" />
+    <state width="1242" height="421" key="GridCell.Tab.2.left" timestamp="1585988373534">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1242" height="421" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585988373534" />
+    <state width="1242" height="421" key="GridCell.Tab.2.right" timestamp="1585988373534">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1242" height="421" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585988373534" />
+    <state width="1215" height="421" key="GridCell.Tab.3.bottom" timestamp="1585988306943">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1215" height="421" key="GridCell.Tab.3.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
+    <state width="1215" height="421" key="GridCell.Tab.3.center" timestamp="1585988306943">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1215" height="421" key="GridCell.Tab.3.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
+    <state width="1215" height="421" key="GridCell.Tab.3.left" timestamp="1585988306943">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1215" height="421" key="GridCell.Tab.3.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
+    <state width="1215" height="421" key="GridCell.Tab.3.right" timestamp="1585988306943">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1215" height="421" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
     <state x="336" y="56" key="SettingsEditor" timestamp="1585984267794">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="336" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1585984267794" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1585987470233">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1585987470233" />
   </component>
 </project>
