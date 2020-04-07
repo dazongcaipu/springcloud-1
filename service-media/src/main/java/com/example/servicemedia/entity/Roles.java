@@ -1,8 +1,9 @@
 package com.example.servicemedia.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Roles {
+public class Roles implements Serializable {
     private Integer id;
 
     private String rolename;

@@ -48,8 +48,8 @@ public class MainController {
 
     @RequestMapping("/test4")
     @ResponseBody
-    public List<Media> test(Integer MediaId){
-        return mediaProvider.get(MediaId);
+    public List<Media> test(Integer mediaId){
+        return mediaProvider.get(mediaId);
     }
 
 }

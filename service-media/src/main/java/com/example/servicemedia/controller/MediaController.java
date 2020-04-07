@@ -5,6 +5,8 @@ import com.example.servicemedia.entity.MediaExample;
 import com.example.servicemedia.mapper.MediaMapper;
 import com.example.servicemedia.service.IMediaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,6 +26,7 @@ public class MediaController {
         return mediaMapper.insert(media) > 0;
     }
 
+    @CacheEvict(value = "media", key = "#media.id")
     @RequestMapping(value = "/update")
     public boolean update(@RequestBody Media media){
         MediaExample me = new MediaExample();
@@ -31,6 +34,7 @@ public class MediaController {
         return mediaMapper.updateByExample(media,me) > 0;
     }
 
+    @Cacheable(value = "media",key = "#mediaId")
     @RequestMapping(value = "/get")
     public List<Media> get(@RequestParam(value = "mediaId",required = false)Integer mediaId){
         MediaExample me = new MediaExample();
@@ -39,6 +43,7 @@ public class MediaController {
         return mediaMapper.selectByExample(me);
     }
 
+    @CacheEvict(value = "media", key = "#mediaId")
     @RequestMapping(value = "/delete")
     public boolean delete(@RequestParam(value = "mediaId", required = false)Integer mediaId, @RequestParam(value = "mediaIdList", required = false)List<Integer> mediaIdList){
         MediaExample me = new MediaExample();

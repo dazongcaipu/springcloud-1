@@ -36,3 +36,8 @@ feign:
     response:
       useGzipDecoder: true
       enabled: true
+
+logging:
+  file:
+    path: /data/logs/${spring.application.name}
+  config: src/main/resources/logback-spring.xml

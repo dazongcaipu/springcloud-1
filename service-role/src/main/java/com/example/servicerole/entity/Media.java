@@ -1,6 +1,8 @@
 package com.example.servicerole.entity;
 
-public class Media {
+import java.io.Serializable;
+
+public class Media implements Serializable {
     private Integer id;
 
     private String mediaName;

@@ -1,8 +1,9 @@
 package com.example.servicemenu.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Usr {
+public class Usr implements Serializable {
     private Integer id;
 
     private Integer roleid;

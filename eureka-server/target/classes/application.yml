@@ -48,3 +48,7 @@ MenuServiceProvider:
   ribbon:
     ## 服务提供者的地址，不是服务注册中心的地址
     listOfServers: http://localhost:8765
+logging:
+  file:
+    path: /data/logs/${spring.application.name}
+  config: classpath:logback-spring.xml

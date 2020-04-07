@@ -4,6 +4,8 @@ import com.example.serviceuser.entity.Usr;
 import com.example.serviceuser.entity.UsrExample;
 import com.example.serviceuser.mapper.UsrMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,6 +22,7 @@ public class UserController {
         return userMapper.insert(user) > 0;
     }
 
+    @CacheEvict(value = "user", key = "#user.id")
     @RequestMapping(value = "/update")
     public boolean update(@RequestBody Usr user){
         UsrExample me = new UsrExample();
@@ -27,6 +30,7 @@ public class UserController {
         return userMapper.updateByExample(user,me) > 0;
     }
 
+    @Cacheable(value = "user",key = "#userId")
     @RequestMapping(value = "/get")
     public List<Usr> get(@RequestParam(value = "userId",required = false)Integer userId){
         UsrExample me = new UsrExample();
@@ -35,6 +39,7 @@ public class UserController {
         return userMapper.selectByExample(me);
     }
 
+    @CacheEvict(value = "user", key = "#userId")
     @RequestMapping(value = "/delete")
     public boolean delete(@RequestParam(value = "userId", required = false)Integer userId, @RequestParam(value = "userIdList", required = false)List<Integer> userIdList){
         UsrExample me = new UsrExample();
