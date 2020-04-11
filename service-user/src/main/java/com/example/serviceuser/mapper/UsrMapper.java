@@ -2,8 +2,8 @@ package com.example.serviceuser.mapper;
 
 import java.util.List;
 
-import com.example.serviceuser.entity.Usr;
-import com.example.serviceuser.entity.UsrExample;
+import com.example.serviceuser.model.entity.Usr;
+import com.example.serviceuser.model.entity.UsrExample;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 

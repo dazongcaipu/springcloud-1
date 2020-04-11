@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.servicemedia.mapper.MediaMapper">
-  <resultMap id="BaseResultMap" type="com.example.servicemedia.entity.Media">
+  <resultMap id="BaseResultMap" type="com.example.servicemedia.model.entity.Media">
     <result column="id" jdbcType="INTEGER" property="id" />
     <result column="media_name" jdbcType="VARCHAR" property="mediaName" />
     <result column="media_path" jdbcType="VARCHAR" property="mediaPath" />
@@ -13,7 +13,7 @@
     <result column="relation_table" jdbcType="VARCHAR" property="relationTable" />
     <result column="media_urlpath" jdbcType="VARCHAR" property="mediaUrlpath" />
   </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.example.servicemedia.entity.Media">
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.example.servicemedia.model.entity.Media">
     <result column="media_data" jdbcType="LONGVARBINARY" property="mediaData" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -81,7 +81,7 @@
   <sql id="Blob_Column_List">
     media_data
   </sql>
-  <select id="selectByExampleWithBLOBs" parameterType="com.example.servicemedia.entity.MediaExample" resultMap="ResultMapWithBLOBs">
+  <select id="selectByExampleWithBLOBs" parameterType="com.example.servicemedia.model.entity.MediaExample" resultMap="ResultMapWithBLOBs">
     select
     <if test="distinct">
       distinct
@@ -98,7 +98,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" parameterType="com.example.servicemedia.entity.MediaExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.example.servicemedia.model.entity.MediaExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -113,13 +113,13 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.example.servicemedia.entity.MediaExample">
+  <delete id="deleteByExample" parameterType="com.example.servicemedia.model.entity.MediaExample">
     delete from media
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.example.servicemedia.entity.Media">
+  <insert id="insert" parameterType="com.example.servicemedia.model.entity.Media">
     insert into media (id, media_name, media_path, 
       media_end_name, media_time, media_size, 
       media_type, relation_id, relation_table, 
@@ -129,7 +129,7 @@
       #{mediaType,jdbcType=VARCHAR}, #{relationId,jdbcType=INTEGER}, #{relationTable,jdbcType=VARCHAR}, 
       #{mediaUrlpath,jdbcType=VARCHAR}, #{mediaData,jdbcType=LONGVARBINARY})
   </insert>
-  <insert id="insertSelective" parameterType="com.example.servicemedia.entity.Media">
+  <insert id="insertSelective" parameterType="com.example.servicemedia.model.entity.Media">
     insert into media
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -202,7 +202,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.example.servicemedia.entity.MediaExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.example.servicemedia.model.entity.MediaExample" resultType="java.lang.Long">
     select count(*) from media
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />

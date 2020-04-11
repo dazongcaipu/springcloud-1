@@ -1,10 +1,9 @@
 package com.example.servicerole.mapper;
 
-import com.example.servicerole.entity.Roles;
-import com.example.servicerole.entity.RolesExample;
+import com.example.servicerole.model.entity.Roles;
+import com.example.servicerole.model.entity.RolesExample;
 import java.util.List;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 

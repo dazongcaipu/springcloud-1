@@ -19,7 +19,7 @@ spring:
   application:
     name: eureka-server
 #mybatis-plus:
-#  type-aliases-package: com.example.main.entity
+#  type-aliases-package: com.example.main.model.entity
 #  mapper-locations: classpath:mapper/*.xml
 ribbon:
   ConnectTimeout: 500 # 连接超时时长

@@ -1,7 +1,7 @@
 package com.example.servicemedia.mapper;
 
-import com.example.servicemedia.entity.Media;
-import com.example.servicemedia.entity.MediaExample;
+import com.example.servicemedia.model.entity.Media;
+import com.example.servicemedia.model.entity.MediaExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;

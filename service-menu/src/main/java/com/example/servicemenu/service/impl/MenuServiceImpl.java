@@ -1,9 +1,9 @@
 package com.example.servicemenu.service.impl;
 
-import com.example.servicemenu.entity.Menu;
-import com.example.servicemenu.entity.MenuExample;
+import com.example.servicemenu.model.entity.Menu;
+import com.example.servicemenu.model.entity.MenuExample;
 import com.example.servicemenu.mapper.MenuMapper;
-import com.example.servicemenu.service.IMenuService;
+import com.example.servicemenu.service.intf.IMenuService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.slf4j.Logger;

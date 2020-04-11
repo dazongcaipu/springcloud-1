@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.serviceuser.mapper.UsrMapper">
-  <resultMap id="BaseResultMap" type="com.example.serviceuser.entity.Usr">
+  <resultMap id="BaseResultMap" type="com.example.serviceuser.model.entity.Usr">
     <result column="id" jdbcType="INTEGER" property="id" />
     <result column="roleID" jdbcType="INTEGER" property="roleid" />
     <result column="userName" jdbcType="VARCHAR" property="username" />
@@ -80,7 +80,7 @@
     id, roleID, userName, telphone, position, email, recordDate, recordPerson, password,
     loginName, loginTime, logoutTime, userProtocol, verCode, effectTime
   </sql>
-  <select id="selectByExample" parameterType="com.example.serviceuser.entity.UsrExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.example.serviceuser.model.entity.UsrExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
@@ -95,13 +95,13 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.example.serviceuser.entity.UsrExample">
+  <delete id="deleteByExample" parameterType="com.example.serviceuser.model.entity.UsrExample">
     delete from usr
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.example.serviceuser.entity.Usr">
+  <insert id="insert" parameterType="com.example.serviceuser.model.entity.Usr">
     insert into usr (id, roleID, userName,
       telphone, position, email,
       recordDate, recordPerson, password,
@@ -115,7 +115,7 @@
       #{userprotocol,jdbcType=INTEGER}, #{vercode,jdbcType=VARCHAR}, #{effecttime,jdbcType=TIMESTAMP}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.example.serviceuser.entity.Usr">
+  <insert id="insertSelective" parameterType="com.example.serviceuser.model.entity.Usr">
     insert into usr
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -212,7 +212,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.example.serviceuser.entity.UsrExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.example.serviceuser.model.entity.UsrExample" resultType="java.lang.Long">
     select count(*) from usr
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />

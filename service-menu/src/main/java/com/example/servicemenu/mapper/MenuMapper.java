@@ -1,7 +1,7 @@
 package com.example.servicemenu.mapper;
 
-import com.example.servicemenu.entity.Menu;
-import com.example.servicemenu.entity.MenuExample;
+import com.example.servicemenu.model.entity.Menu;
+import com.example.servicemenu.model.entity.MenuExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;

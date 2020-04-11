@@ -1,10 +1,10 @@
 package com.example.serviceuser.controller;
 
-import com.example.serviceuser.entity.Usr;
-import com.example.serviceuser.entity.UsrExample;
+import com.example.serviceuser.model.entity.Usr;
+import com.example.serviceuser.model.entity.UsrExample;
 import com.example.serviceuser.mapper.UsrMapper;
-import com.example.serviceuser.service.IUsrService;
-import com.example.serviceuser.service.MenuProvider;
+import com.example.serviceuser.service.intf.IUsrService;
+import com.example.serviceuser.service.intf.MenuProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

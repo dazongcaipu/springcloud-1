@@ -1,13 +1,13 @@
 package com.example.main.controller;
 
-import com.example.main.entity.Media;
-import com.example.main.entity.Menu;
-import com.example.main.entity.Roles;
-import com.example.main.entity.Usr;
-import com.example.main.service.MediaProvider;
-import com.example.main.service.MenuProvider;
-import com.example.main.service.RoleProvider;
-import com.example.main.service.UserProvider;
+import com.example.main.model.entity.Media;
+import com.example.main.model.entity.Menu;
+import com.example.main.model.entity.Roles;
+import com.example.main.model.entity.Usr;
+import com.example.main.service.intf.MediaProvider;
+import com.example.main.service.intf.MenuProvider;
+import com.example.main.service.intf.RoleProvider;
+import com.example.main.service.intf.UserProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

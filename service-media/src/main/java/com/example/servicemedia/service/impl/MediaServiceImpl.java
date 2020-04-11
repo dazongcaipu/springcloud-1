@@ -1,9 +1,9 @@
 package com.example.servicemedia.service.impl;
 
-import com.example.servicemedia.entity.Media;
-import com.example.servicemedia.entity.MediaExample;
+import com.example.servicemedia.model.entity.Media;
+import com.example.servicemedia.model.entity.MediaExample;
 import com.example.servicemedia.mapper.MediaMapper;
-import com.example.servicemedia.service.IMediaService;
+import com.example.servicemedia.service.intf.IMediaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

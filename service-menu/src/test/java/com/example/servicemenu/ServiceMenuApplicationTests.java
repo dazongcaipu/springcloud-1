@@ -1,17 +1,12 @@
 package com.example.servicemenu;
 
-import com.example.servicemenu.mapper.MenuMapper;
-import com.example.servicemenu.service.IMenuService;
-import com.example.servicemenu.util.CommandUtil;
-import com.netflix.hystrix.HystrixCommand;
+import com.example.servicemenu.service.intf.IMenuService;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @SpringBootTest
 class ServiceMenuApplicationTests {

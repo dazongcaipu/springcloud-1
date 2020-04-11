@@ -1,14 +1,15 @@
 package com.example.servicemenu.controller;
 
-import com.example.servicemenu.entity.Menu;
-import com.example.servicemenu.entity.MenuExample;
+import com.example.servicemenu.model.entity.Menu;
+import com.example.servicemenu.model.entity.MenuExample;
 import com.example.servicemenu.mapper.MenuMapper;
-import com.example.servicemenu.service.IMenuService;
+import com.example.servicemenu.service.intf.IMenuService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,7 +31,8 @@ public class MenuController {
         return menuMapper.insert(menu) > 0;
     }
 
-    @CacheEvict(value = "menu", key = "#menu.id")
+    @Transactional
+    @CacheEvict(value = "menu", key = "#menu.id",condition = "#menu != null")
     @RequestMapping(value = "/update")
     public boolean update(@RequestBody Menu menu){
         MenuExample me = new MenuExample();
@@ -38,7 +40,8 @@ public class MenuController {
         return menuMapper.updateByExample(menu,me) > 0;
     }
 
-    @Cacheable(value = "menu",key = "#menuId")
+    @Transactional
+    @Cacheable(value = "menu",key = "#menuId",unless="#menuId == null")
     @RequestMapping(value = "/get")
     public List<Menu> get(@RequestParam(value = "menuId",required = false)Integer menuId){
         MenuExample me = new MenuExample();
@@ -47,7 +50,7 @@ public class MenuController {
         return menuMapper.selectByExample(me);
     }
 
-    @CacheEvict(value = "menu", key = "#menuId")
+    @CacheEvict(value = "menu", key = "#menuId",condition = "#menuId != null")
     @RequestMapping(value = "/delete")
     public boolean delete(@RequestParam(value = "menuId", required = false)Integer menuId, @RequestParam(value = "menuIdList", required = false)List<Integer> menuIdList){
         MenuExample me = new MenuExample();

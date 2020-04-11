@@ -8,7 +8,7 @@ eureka:
       defaultZone: http://server2:8777/eureka/,http://server1:8761/eureka/
 
 mybatis-plus:
-  type-aliases-package: com.example.servicemenu.entity
+  type-aliases-package: com.example.servicemenu.model.entity
   mapper-locations: classpath:mapper/*.xml
 
 spring:

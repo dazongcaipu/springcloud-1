@@ -1,9 +1,9 @@
 package com.example.servicerole.controller;
 
-import com.example.servicerole.entity.Roles;
-import com.example.servicerole.entity.RolesExample;
+import com.example.servicerole.model.entity.Roles;
+import com.example.servicerole.model.entity.RolesExample;
 import com.example.servicerole.mapper.RolesMapper;
-import com.example.servicerole.service.IRoleService;
+import com.example.servicerole.service.intf.IRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -26,7 +26,7 @@ public class RoleController {
         return roleMapper.insert(role) > 0;
     }
 
-    @CacheEvict(value = "role", key = "#role.id")
+    @CacheEvict(value = "role", key = "#role.id",condition = "#role != null")
     @RequestMapping(value = "/update")
     public boolean update(@RequestBody Roles role){
         RolesExample me = new RolesExample();
@@ -34,7 +34,7 @@ public class RoleController {
         return roleMapper.updateByExample(role,me) > 0;
     }
 
-    @Cacheable(value = "role",key = "#roleId")
+    @Cacheable(value = "role",key = "#roleId",unless="#roleId == null")
     @RequestMapping(value = "/get")
     public List<Roles> get(@RequestParam(value = "roleId",required = false)Integer roleId){
         RolesExample me = new RolesExample();
@@ -43,7 +43,7 @@ public class RoleController {
         return roleMapper.selectByExample(me);
     }
 
-    @CacheEvict(value = "role", key = "#roleId")
+    @CacheEvict(value = "role", key = "#roleId",condition = "#roleId != null")
     @RequestMapping(value = "/delete")
     public boolean delete(@RequestParam(value = "roleId", required = false)Integer roleId, @RequestParam(value = "roleIdList", required = false)List<Integer> roleIdList){
         RolesExample me = new RolesExample();

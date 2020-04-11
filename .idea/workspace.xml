@@ -2,105 +2,394 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="eureka-server:war" />
-      <artifact name="springcloud-1:war" />
+      <artifact name="springcloud-1:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68ad9c79-1607-4965-9751-98189dc972b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-media/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-menu/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-role/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-user/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/config/RedisConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/bussiness/opendoc_bussiness.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/db/opendoc_db.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/exception/opendoc_exception.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/opendoc.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/platform/opendoc_platform.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logPath_IS_UNDEFINED/clsapi-console.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/clsapi-console.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/eurekaserver/EurekaServerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/eurekaserver/ServletInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/eurekaserver/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/classes/com/example/eurekaserver/service/MenuServiceProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/HdrHistogram-2.1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/LatencyUtils-2.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/antlr-runtime-3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/archaius-core-0.7.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/asm-5.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/bcpkix-jdk15on-1.60.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/bcprov-jdk15on-1.60.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-codec-1.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-configuration-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-jxpath-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/commons-math-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/d3js-3.4.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/druid-1.1.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/eureka-client-1.9.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/eureka-core-1.9.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/evictor-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/feign-core-10.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/feign-form-3.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/feign-form-spring-3.8.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/feign-hystrix-10.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/feign-slf4j-10.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/freemarker-2.3.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/gson-2.8.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/guava-15.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/guice-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/httpclient-4.5.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/httpcore-4.4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/hystrix-core-1.5.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/hystrix-javanica-1.5.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/hystrix-metrics-event-stream-1.5.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/hystrix-serialization-1.5.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-dataformat-xml-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-dataformat-yaml-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-afterburner-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-jaxb-annotations-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.activation-api-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.xml.bind-api-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jersey-apache-client4-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jersey-client-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jersey-core-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jersey-server-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jersey-servlet-1.19.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jettison-1.3.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/joda-time-2.10.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jquery-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jsqlparser-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jsr305-3.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jsr311-api-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/micrometer-core-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-3.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-plus-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-plus-annotation-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-plus-boot-starter-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-plus-core-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-plus-extension-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-plus-generator-3.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-2.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-8.0.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/netflix-commons-util-0.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/netflix-eventbus-0.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/netflix-infix-0.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/netflix-statistics-0.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/reactive-streams-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/reactor-core-3.3.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/reactor-extra-3.3.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/ribbon-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/ribbon-core-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/ribbon-eureka-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/ribbon-httpclient-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/ribbon-loadbalancer-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/ribbon-transport-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/rxjava-1.3.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/rxjava-reactive-streams-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/rxnetty-0.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/rxnetty-contexts-0.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/rxnetty-servo-0.4.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/servo-core-0.12.21.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.29.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-actuator-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-actuator-autoconfigure-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-actuator-2.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-cache-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-freemarker-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-validation-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.2.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-commons-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-context-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-loadbalancer-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-archaius-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-eureka-client-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-eureka-server-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-hystrix-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-hystrix-dashboard-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-ribbon-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-netflix-zuul-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-openfeign-core-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-loadbalancer-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-archaius-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-eureka-client-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-eureka-server-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-hystrix-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-hystrix-dashboard-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-ribbon-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-netflix-zuul-2.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-openfeign-2.2.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-cloud-starter-ribbon-1.4.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-crypto-5.2.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-security-rsa-1.0.7.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/stax-api-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/stax2-api-4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/stringtemplate-3.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/txw2-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/velocity-engine-core-2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/woodstox-core-5.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/xmlpull-1.1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/xpp3_min-1.1.4c.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/xstream-1.4.11.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/target/eureka-server-0.0.1-SNAPSHOT/WEB-INF/lib/zuul-core-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-media/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/ServiceMediaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/ServiceMediaApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/controller/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/controller/MediaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/MediaExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/MediaExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/MenuExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/MenuExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/entity/UsrExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/model/entity/UsrExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/mapper/MediaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/mapper/MediaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/IMediaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/IMediaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/RoleProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/UserProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/impl/MediaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/impl/MediaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/menuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/java/com/example/servicemedia/service/intf/menuProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-media/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/src/main/resources/mapper/MediaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/src/main/resources/mapper/MediaMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-media/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/ServiceMediaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/ServiceMediaApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/controller/MediaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/controller/MediaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Usr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/ServiceMenuApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/ServiceMenuApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MediaExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MediaExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MediaExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MediaExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MenuExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MenuExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MenuExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/MenuExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/Usr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/UsrExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/UsrExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/UsrExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/entity/UsrExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/mapper/MediaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/mapper/MediaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/IMediaService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/RoleProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/UserProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/impl/MediaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/impl/MediaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/com/example/servicemedia/service/menuProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-media/target/classes/mapper/MediaMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-media/target/classes/mapper/MediaMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/MenuExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/MenuExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/model/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/IMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/IMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/MediaProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/RoleProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/intf/UserProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/service/impl/MenuServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/util/CommandUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/java/com/example/servicemenu/utils/CommandUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-menu/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/main/resources/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/src/test/java/com/example/servicemenu/ServiceMenuApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/src/test/java/com/example/servicemenu/ServiceMenuApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-menu/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/ServiceMenuApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/ServiceMenuApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Usr.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/ServiceRoleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/ServiceRoleApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/MenuExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/MenuExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/MenuExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/MenuExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/entity/Usr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/mapper/MenuMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/mapper/MenuMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/IMenuService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/MediaProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/RoleProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/UserProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/util/CommandUtil$Method.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/com/example/servicemenu/util/CommandUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/classes/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/classes/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-menu/target/test-classes/com/example/servicemenu/ServiceMenuApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-menu/target/test-classes/com/example/servicemenu/ServiceMenuApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/controller/RoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/RolesExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/RolesExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/model/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/mapper/RolesMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/mapper/RolesMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/IRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/IRoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/MediaProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/MenuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/MenuProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/intf/UserProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/java/com/example/servicerole/service/impl/RoleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/src/main/resources/mapper/RolesMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/src/main/resources/mapper/RolesMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-role/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/ServiceRoleApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/ServiceRoleApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/controller/RoleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Usr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/entity/Usr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/IRoleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/MediaProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/MenuProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/UserProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-role/target/classes/com/example/servicerole/service/impl/RoleServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/ServiceUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/ServiceUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/config/RestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/entity/UsrExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/model/entity/UsrExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/mapper/UsrMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/mapper/UsrMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/IUsrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/IUsrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/MediaProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/MenuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/MenuProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/intf/RoleProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/impl/UsrServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/java/com/example/serviceuser/service/impl/UsrServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/src/test/java/com/example/serviceuser/ServiceUserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/src/test/java/com/example/serviceuser/ServiceUserApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/ServiceUserApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/ServiceUserApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/config/RestConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/controller/TestController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Usr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/Usr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/UsrExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/UsrExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/UsrExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/entity/UsrExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/mapper/UsrMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/mapper/UsrMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/IUsrService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/MediaProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/MenuProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/RoleProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/impl/UsrServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/com/example/serviceuser/service/impl/UsrServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/classes/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-user/target/test-classes/com/example/serviceuser/ServiceUserApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-user/target/test-classes/com/example/serviceuser/ServiceUserApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/SpringCloudsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/SpringCloudsApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Media.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Roles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MediaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MediaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Roles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Roles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/entity/Usr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/model/entity/Usr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/MediaProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/MediaProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/MenuProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/MenuProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/RoleProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/RoleProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/service/UserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/service/intf/UserProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/SpringCloudsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/SpringCloudsApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/entity/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/entity/Usr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/controller/MediaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/controller/MediaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/main/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/entity/Usr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/service/MediaProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/service/MenuProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/service/RoleProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/main/service/UserProvider.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/springcloud.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/SpringCloudsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/SpringCloudsApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Media.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Media.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Usr.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Usr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MediaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MediaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/RoleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/RoleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Media.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Menu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/entity/Usr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/service/MediaProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/service/MenuProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/service/RoleProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springcloud/WEB-INF/classes/com/example/main/service/UserProvider.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -134,6 +423,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -142,14 +435,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2824287" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -159,12 +455,18 @@
       <recent name="com.example.servicemenu.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workplace\springcloud-1\src\main\java\com\example\main" />
+      <recent name="D:\workplace\springcloud-1\service-user\src\main\java\com\example\serviceuser" />
+      <recent name="D:\workplace\springcloud-1\service-role\src\main\java\com\example\servicerole" />
+      <recent name="D:\workplace\springcloud-1\src\main\webapp\WEB-INF\lib" />
       <recent name="D:\workplace\springcloud-1\src\main\resources" />
-      <recent name="D:\workplace\springcloud-1\eureka-server\src\main\resources" />
-      <recent name="D:\workplace\springcloud-1\service-media\src\main\resources" />
-      <recent name="D:\workplace\springcloud-1\service-menu\src\main\resources" />
-      <recent name="D:\workplace\springcloud-1\service-role\src\main\resources" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn -e" />
+      <command value="mvn -e deploy" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -173,7 +475,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ServiceUserApplication">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.41">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eurekaserver.EurekaServerApplication" />
@@ -209,7 +511,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringCloudsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringCloudsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springcloud-1" />
       <extension name="coverage">
         <pattern>
@@ -223,22 +525,17 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.41" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.41" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/springcloud_1_war/" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="springcloud-1:war">
+        <artifact name="springcloud-1:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/springcloud_1_war" />
-          </settings>
-        </artifact>
-        <artifact name="eureka-server:war">
-          <settings>
-            <option name="CONTEXT_PATH" value="/eureka_server_war" />
+            <option name="CONTEXT_PATH" value="/springcloud_1_war_exploded" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springcloud-1" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_springcloud-1_5" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -246,7 +543,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51109" />
+        <option name="DEBUG_PORT" value="56624" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -296,9 +593,72 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="springcloud-1:war" />
-          <artifact name="eureka-server:war" />
+          <artifact name="springcloud-1:war exploded" />
         </option>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.41" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_springcloud-1" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56624" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
@@ -310,17 +670,12 @@
       <item itemvalue="Spring Boot.SpringCloudsApplication" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.41" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.SpringCloudsApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.23809524" />
+          <option name="contentProportion" value="0.25287357" />
           <treeState>
             <expand>
               <path>
@@ -360,7 +715,11 @@
       <updated>1585984143655</updated>
       <workItem from="1585984147951" duration="10279000" />
       <workItem from="1586016148358" duration="2408000" />
-      <workItem from="1586269794586" duration="2442000" />
+      <workItem from="1586269794586" duration="2645000" />
+      <workItem from="1586357562867" duration="2316000" />
+      <workItem from="1586518869394" duration="11690000" />
+      <workItem from="1586581378735" duration="13707000" />
+      <workItem from="1586626413405" duration="6565000" />
     </task>
     <task id="LOCAL-00001" summary="项目结构变更">
       <created>1585987466217</created>
@@ -376,7 +735,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585988457012</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加日志打印">
+      <created>1586272786901</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586272786901</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,100 +750,165 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="项目结构变更" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目结构变更" />
+    <MESSAGE value="添加日志打印" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加日志打印" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="722" y="271" key="#BuildArtifactsBeforeRunChooser" timestamp="1586585507786">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="722" y="271" key="#BuildArtifactsBeforeRunChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1586585507786" />
     <state x="451" y="89" key="#Notifications" timestamp="1585987603552">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="451" y="89" key="#Notifications/0.0.1920.1032@0.0.1920.1032" timestamp="1585987603552" />
-    <state x="409" y="159" width="1174" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585985569003">
+    <state x="409" y="159" width="1174" height="842" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586586880773">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="409" y="159" width="1174" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1585985569003" />
+    <state x="409" y="159" width="1174" height="842" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586586880773" />
+    <state x="659" y="234" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1586586099858">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="659" y="234" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586586099858" />
+    <state x="659" y="253" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586585926206">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="659" y="253" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586585926206" />
+    <state x="427" y="423" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1586627428208">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="427" y="423" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586627428208" />
     <state x="623" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585986884321">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="623" y="199" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1585986884321" />
-    <state x="395" y="34" key="CommitChangelistDialog2" timestamp="1585988422948">
+    <state x="723" y="304" key="#com.intellij.tools.ToolEditorDialog" timestamp="1586585540618">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="395" y="34" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1585988422948" />
-    <state x="685" y="209" key="FileChooserDialogImpl" timestamp="1585998171618">
+    <state x="723" y="304" key="#com.intellij.tools.ToolEditorDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586585540618" />
+    <state x="648" y="209" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1586554011675">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="685" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1585998171618" />
-    <state width="1391" height="339" key="GridCell.Tab.0.bottom" timestamp="1586271640884">
+    <state x="648" y="209" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586554011675" />
+    <state x="395" y="34" key="CommitChangelistDialog2" timestamp="1586272739465">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640884" />
-    <state width="1391" height="339" key="GridCell.Tab.0.center" timestamp="1586271640883">
+    <state x="395" y="34" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1586272739465" />
+    <state x="678" y="164" key="DetectedRootsChooserDialog" timestamp="1586553811223">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640883" />
-    <state width="1391" height="339" key="GridCell.Tab.0.left" timestamp="1586271640883">
+    <state x="678" y="164" key="DetectedRootsChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586553811223" />
+    <state x="685" y="209" key="FileChooserDialogImpl" timestamp="1586554101091">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640883" />
-    <state width="1391" height="339" key="GridCell.Tab.0.right" timestamp="1586271640884">
+    <state x="685" y="209" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1586554101091" />
+    <state width="1364" height="343" key="GridCell.Tab.0.bottom" timestamp="1586632615910">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640884" />
-    <state width="1391" height="339" key="GridCell.Tab.1.bottom" timestamp="1586271640884">
+    <state width="1364" height="343" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615910" />
+    <state width="1364" height="343" key="GridCell.Tab.0.center" timestamp="1586632615910">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640884" />
-    <state width="1391" height="339" key="GridCell.Tab.1.center" timestamp="1586271640884">
+    <state width="1364" height="343" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615910" />
+    <state width="1364" height="343" key="GridCell.Tab.0.left" timestamp="1586632615910">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640884" />
-    <state width="1391" height="339" key="GridCell.Tab.1.left" timestamp="1586271640884">
+    <state width="1364" height="343" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615910" />
+    <state width="1364" height="343" key="GridCell.Tab.0.right" timestamp="1586632615910">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640884" />
-    <state width="1391" height="339" key="GridCell.Tab.1.right" timestamp="1586271640884">
+    <state width="1364" height="343" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615910" />
+    <state width="1364" height="343" key="GridCell.Tab.1.bottom" timestamp="1586632615911">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586271640884" />
-    <state width="1391" height="339" key="GridCell.Tab.2.bottom" timestamp="1586271434190">
+    <state width="1364" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615911" />
+    <state width="1364" height="343" key="GridCell.Tab.1.center" timestamp="1586632615911">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586271434190" />
-    <state width="1391" height="339" key="GridCell.Tab.2.center" timestamp="1586271434190">
+    <state width="1364" height="343" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615911" />
+    <state width="1364" height="343" key="GridCell.Tab.1.left" timestamp="1586632615911">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586271434190" />
-    <state width="1391" height="339" key="GridCell.Tab.2.left" timestamp="1586271434190">
+    <state width="1364" height="343" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615911" />
+    <state width="1364" height="343" key="GridCell.Tab.1.right" timestamp="1586632615911">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586271434190" />
-    <state width="1391" height="339" key="GridCell.Tab.2.right" timestamp="1586271434190">
+    <state width="1364" height="343" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586632615911" />
+    <state width="1364" height="490" key="GridCell.Tab.2.bottom" timestamp="1586632147991">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1391" height="339" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586271434190" />
-    <state width="1215" height="421" key="GridCell.Tab.3.bottom" timestamp="1585988306943">
+    <state width="1364" height="490" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586632147991" />
+    <state width="1364" height="490" key="GridCell.Tab.2.center" timestamp="1586632147991">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1215" height="421" key="GridCell.Tab.3.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
-    <state width="1215" height="421" key="GridCell.Tab.3.center" timestamp="1585988306943">
+    <state width="1364" height="490" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586632147991" />
+    <state width="1364" height="490" key="GridCell.Tab.2.left" timestamp="1586632147991">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1215" height="421" key="GridCell.Tab.3.center/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
-    <state width="1215" height="421" key="GridCell.Tab.3.left" timestamp="1585988306943">
+    <state width="1364" height="490" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586632147991" />
+    <state width="1364" height="490" key="GridCell.Tab.2.right" timestamp="1586632147991">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1215" height="421" key="GridCell.Tab.3.left/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
-    <state width="1215" height="421" key="GridCell.Tab.3.right" timestamp="1585988306943">
+    <state width="1364" height="490" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586632147991" />
+    <state width="1364" height="548" key="GridCell.Tab.3.bottom" timestamp="1586587749387">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1215" height="421" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1585988306943" />
-    <state x="336" y="56" key="SettingsEditor" timestamp="1585984267794">
+    <state width="1364" height="548" key="GridCell.Tab.3.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586587749387" />
+    <state width="1364" height="548" key="GridCell.Tab.3.center" timestamp="1586587749386">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="336" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1585984267794" />
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1585988459232">
+    <state width="1364" height="548" key="GridCell.Tab.3.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586587749386" />
+    <state width="1364" height="548" key="GridCell.Tab.3.left" timestamp="1586587749386">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1585988459232" />
+    <state width="1364" height="548" key="GridCell.Tab.3.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586587749386" />
+    <state width="1364" height="548" key="GridCell.Tab.3.right" timestamp="1586587749386">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1364" height="548" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586587749386" />
+    <state width="1391" height="615" key="GridCell.Tab.4.bottom" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state width="1391" height="615" key="GridCell.Tab.4.center" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.center/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state width="1391" height="615" key="GridCell.Tab.4.left" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.left/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state width="1391" height="615" key="GridCell.Tab.4.right" timestamp="1586546397948">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1391" height="615" key="GridCell.Tab.4.right/0.0.1920.1032@0.0.1920.1032" timestamp="1586546397948" />
+    <state x="373" y="84" key="Maven.ArtifactSearchDialog" timestamp="1586593742693">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="373" y="84" key="Maven.ArtifactSearchDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586593742693" />
+    <state x="336" y="0" key="SettingsEditor" timestamp="1586586655763">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="336" y="0" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1586586655763" />
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2" timestamp="1586272793500">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="451" y="181" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1586272793500" />
+    <state x="559" y="295" key="com.intellij.ide.util.TipDialog" timestamp="1586626462308">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="559" y="295" key="com.intellij.ide.util.TipDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1586626462308" />
+    <state x="603" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1586554009570">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="603" y="385" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1032@0.0.1920.1032" timestamp="1586554009570" />
+    <state x="861" y="185" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey" timestamp="1586585541971">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="861" y="185" key="com.intellij.tools.ToolSelectDialog.dimensionServiceKey/0.0.1920.1032@0.0.1920.1032" timestamp="1586585541971" />
+    <state x="531" y="227" width="840" height="1034" key="run.anything.popup" timestamp="1586589800374">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="531" y="227" width="840" height="1034" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1586589800374" />
   </component>
 </project>

@@ -1,9 +1,9 @@
 package com.example.serviceuser.service.impl;
 
-import com.example.serviceuser.entity.Usr;
-import com.example.serviceuser.entity.UsrExample;
+import com.example.serviceuser.model.entity.Usr;
+import com.example.serviceuser.model.entity.UsrExample;
 import com.example.serviceuser.mapper.UsrMapper;
-import com.example.serviceuser.service.IUsrService;
+import com.example.serviceuser.service.intf.IUsrService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
